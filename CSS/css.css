@@ -1,0 +1,194 @@
+*{
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.navbar{
+    background-color: var(--dark-color);
+}
+.navbar .navbar-collapse svg{
+    color: var(--green-color);
+    border-left: 1px solid var(--green-color);
+}
+.navbar .navbar-collapse button{
+    color: var(--yellow-color);
+}
+.landing{
+    background-color: var(--dark-color);
+    color: white;
+    height: 100vh;
+}
+.landing button{
+    color: var(--yellow-color);
+}
+
+.text::before{
+    content: "";
+    height: 2px;
+    position: absolute;
+    width: 100px;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -15px;
+    background-color: var(--green-color);
+}
+.featches .row .icon-holder{
+    height: 200px;
+}
+.featches .row .icon-holder .num{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    height: 12rem;
+    color: var(--section-color);
+}
+.featches .row .icon-holder .icon{
+    position: absolute;
+    left: 50%;
+    font-size: 60px;
+    transform: translate(-50%);
+    color: var(--green-color);
+}
+.featches .row h2{
+    color: var(--yellow-color);
+}
+.our-work{
+    background-color: var(--section-color);
+    padding: 20px;
+}
+.our-work ul li a{
+    color: black;
+    font-weight: 700;
+}
+.our-work ul li a:hover{
+    color: var(--red-color);
+}
+.our-work ul li a.active{
+    background-color: var(--red-color);
+    border-radius: 25px;
+    color: var(--yellow-color);
+}
+.our-work .row .box{
+    position: relative;
+    padding: 5px;
+    overflow: hidden;
+}
+.our-work .row .box::before{
+    content: attr(data-work);
+    position: absolute;
+    background-color: rgb(51 209 204 / 76%);
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+    font-size: 1.5rem;
+    transform: translateY(calc(-100% - 5px));
+}
+.our-work .row .box:hover::before{
+transform: translateY(0);
+}
+.our-work div button{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.our-work div button:hover{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+
+}
+.About{
+    margin-bottom: 20px;
+}
+.About button{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.team{
+    background-color: var(--section-color);
+    padding: 20px;
+}
+.team h2{
+    color: var(--yellow-color);
+}
+.team .text h4{
+    color: white;
+    background-color: var(--green-color);
+}
+.team .text p{
+    background-color: white;
+    margin-top: -8px;
+}
+.start{
+    background-color: var(--dark-color);
+    color: white;
+}
+.start button{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.blog .row .box{
+    background-color: #eff7fa;
+}
+.blog button{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.subscribe{
+    background-color: var(--yellow-color);
+}
+.subscribe input[type="text"]{
+    border: none;
+    border-bottom: 1px solid white;
+}
+.subscribe input[type="submit"]{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+.footer{
+    background-color: var(--dark-color);
+}
+.facebook{
+    background-color: #1877f2;
+}
+.twitter {
+    background-color: #1da1f2;
+}
+.linkedin {
+    background-color: #0077b5;
+}
+.youtube {
+    background-color: #ff0000;
+}
+.footer button{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    border-radius: 25px;
+    font-weight: 100;
+}
+.About .img{
+    width: 635px;
+}
